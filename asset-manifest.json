@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sendyxls/Remi_web.git/static/css/main.4e9720c9.css",
+    "main.js": "/Sendyxls/Remi_web.git/static/js/main.1b72359e.js",
+    "static/js/453.6fa6dd97.chunk.js": "/Sendyxls/Remi_web.git/static/js/453.6fa6dd97.chunk.js",
+    "index.html": "/Sendyxls/Remi_web.git/index.html",
+    "main.4e9720c9.css.map": "/Sendyxls/Remi_web.git/static/css/main.4e9720c9.css.map",
+    "main.1b72359e.js.map": "/Sendyxls/Remi_web.git/static/js/main.1b72359e.js.map",
+    "453.6fa6dd97.chunk.js.map": "/Sendyxls/Remi_web.git/static/js/453.6fa6dd97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e9720c9.css",
+    "static/js/main.1b72359e.js"
+  ]
+}
