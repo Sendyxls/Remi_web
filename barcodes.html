@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовые штрих-коды ShopSmart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .barcode-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .barcode-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+            .barcode-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .barcode-card h3 {
+                color: #333;
+                margin-bottom: 10px;
+                font-size: 1.1rem;
+            }
+
+            .barcode-card .price {
+                color: #10b981;
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .barcode-card .rating {
+                color: #f59e0b;
+                margin-bottom: 15px;
+            }
+
+        .barcode-image {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+            .barcode-image img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        .barcode-number {
+            font-family: monospace;
+            font-size: 1.2rem;
+            background: #f3f4f6;
+            padding: 8px;
+            border-radius: 6px;
+            margin-top: 10px;
+            word-break: break-all;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ef4444;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .barcode-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 ShopSmart - Тестовые штрих-коды</h1>
+        <div class="barcode-grid">
+
+            <!-- Чай Тегуаньинь -->
+            <div class="barcode-card">
+                <h3>🍵 Китайский зеленый чай "Тегуаньинь"</h3>
+                <div class="price">890 ₽</div>
+                <div class="rating">★★★★★ 4.8</div>
+                <div class="barcode-image">
+                    <img src="https://barcode.tec-it.com/barcode.ashx?data=4601234567890&code=EAN13&dpi=120" alt="Barcode">
+                </div>
+                <div class="barcode-number">4601234567890</div>
+                <div class="badge">Популярный</div>
+            </div>
+
+            <!-- Крем -->
+            <div class="barcode-card">
+                <h3>💄 Крем для лица "Жемчужный"</h3>
+                <div class="price">1 250 ₽</div>
+                <div class="rating">★★★★☆ 4.5</div>
+                <div class="barcode-image">
+                    <img src="https://barcode.tec-it.com/barcode.ashx?data=6901234567890&code=EAN13&dpi=120" alt="Barcode">
+                </div>
+                <div class="barcode-number">6901234567890</div>
+                <div class="badge">Хит продаж</div>
+            </div>
+
+            <!-- Перец -->
+            <div class="barcode-card">
+                <h3>🌶️ Сычуаньский перец горошком</h3>
+                <div class="price">450 ₽</div>
+                <div class="rating">★★★★★ 4.7</div>
+                <div class="barcode-image">
+                    <img src="https://barcode.tec-it.com/barcode.ashx?data=6921234567890&code=EAN13&dpi=120" alt="Barcode">
+                </div>
+                <div class="barcode-number">6921234567890</div>
+                <div class="badge">Острый!</div>
+            </div>
+
+            <!-- Лапша -->
+            <div class="barcode-card">
+                <h3>🍜 Китайская лапша "Чоу Мейн"</h3>
+                <div class="price">320 ₽</div>
+                <div class="rating">★★★★☆ 4.3</div>
+                <div class="barcode-image">
+                    <img src="https://barcode.tec-it.com/barcode.ashx?data=6931234567890&code=EAN13&dpi=120" alt="Barcode">
+                </div>
+                <div class="barcode-number">6931234567890</div>
+                <div class="badge">Новинка</div>
+            </div>
+
+            <!-- Соус -->
+            <div class="barcode-card">
+                <h3>🥫 Соус устричный Lee Kum Kee</h3>
+                <div class="price">380 ₽</div>
+                <div class="rating">★★★★★ 4.6</div>
+                <div class="barcode-image">
+                    <img src="https://barcode.tec-it.com/barcode.ashx?data=6941234567890&code=EAN13&dpi=120" alt="Barcode">
+                </div>
+                <div class="barcode-number">6941234567890</div>
+                <div class="badge">Бестселлер</div>
+            </div>
+
+            <!-- Матча -->
+            <div class="barcode-card">
+                <h3>🍵 Чай матча "Matcha Premium"</h3>
+                <div class="price">1 650 ₽</div>
+                <div class="rating">★★★★★ 4.9</div>
+                <div class="barcode-image">
+                    <img src="https://barcode.tec-it.com/barcode.ashx?data=6951234567890&code=EAN13&dpi=120" alt="Barcode">
+                </div>
+                <div class="barcode-number">6951234567890</div>
+                <div class="badge">Топ-1</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: white;">
+            <p>📱 Откройте эту страницу на компьютере</p>
+            <p>📸 Наведите камеру телефона на любой штрих-код</p>
+            <p>✨ Приложение автоматически покажет товар</p>
+        </div>
+    </div>
+</body>
+</html>
